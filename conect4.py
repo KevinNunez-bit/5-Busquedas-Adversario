@@ -109,7 +109,7 @@ def ordena_centro(jugadas, jugador):
     de 4 en línea. Se asignan pesos fijos por columna.
     """
     pesos = [1, 2, 3, 5, 3, 2, 1]
-    return sorted(jugadas, key=lambda x: -pesos[x])
+    return sorted(jugadas, key=lambda x: -pesos[x])kevin
 
 def evalua_3con(s):
     """
