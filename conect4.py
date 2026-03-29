@@ -104,9 +104,12 @@ class InterfaceConecta4(js.JuegoInterface):
 
 def ordena_centro(jugadas, jugador):
     """
-    Ordena las jugadas de acuerdo a la distancia al centro
+    Ordena las jugadas priorizando columnas con mayor valor estratégico.
+    Las columnas centrales tienen más peso porque permiten más combinaciones
+    de 4 en línea. Se asignan pesos fijos por columna.
     """
-    return sorted(jugadas, key=lambda x: abs(x - 4))
+    pesos = [1, 2, 3, 5, 3, 2, 1]
+    return sorted(jugadas, key=lambda x: -pesos[x])
 
 def evalua_3con(s):
     """
