@@ -1,5 +1,5 @@
 """
-Juego de conecta 4
+Juego de conecta 4 :ppp
 
 El estado se va a representar como una lista de 42 elementos, tal que
 
