@@ -1,6 +1,7 @@
 """
 El juego del gato para ilustrar los modelos de juegos
 
+
 """
 
 
@@ -8,7 +9,6 @@ import juegos_simplificado as js
 
 class Gato(js.JuegoZT2):
     """
-    El juego del gato 
 
     """
     def inicializa(self):
