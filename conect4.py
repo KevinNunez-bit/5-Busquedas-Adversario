@@ -119,6 +119,7 @@ def evalua_3con(s):
     - 2 fichas propias + 2 vacías:  +10
     - 3 fichas rivales + 1 vacía:   -80  (bloquear es urgente)
     - 2 fichas rivales + 2 vacías:  -15
+      3 fichas  + 3 vacias = -75 (bloque intermedio)
     """
     def puntua_ventana(ventana, jugador):
         rival = -jugador
